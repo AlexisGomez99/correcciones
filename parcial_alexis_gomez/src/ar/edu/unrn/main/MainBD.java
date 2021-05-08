@@ -2,8 +2,8 @@ package ar.edu.unrn.main;
 
 import java.awt.EventQueue;
 
-import ar.edu.unrn.iu.PantallaPrincipal;
 import ar.edu.unrn.persistencia.PersistenciaVentasBD;
+import ar.edu.unrn.ui.PantallaPrincipal;
 
 public class MainBD {
 

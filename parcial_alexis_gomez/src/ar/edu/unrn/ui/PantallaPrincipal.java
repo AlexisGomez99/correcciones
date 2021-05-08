@@ -1,4 +1,4 @@
-package ar.edu.unrn.iu;
+package ar.edu.unrn.ui;
 
 
 import javax.swing.JFrame;
