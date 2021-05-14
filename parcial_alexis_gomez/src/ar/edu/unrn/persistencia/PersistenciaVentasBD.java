@@ -21,12 +21,12 @@ public class PersistenciaVentasBD implements PersistenciaApi{
 	private VentasWeb ventas= new VentasWeb();
 	private PersistenciaApi enDiscoVentas= new EnDiscoRegistrarVenta();
 	@Override
-	public boolean agregarVenta(String combustible, String cantidadLitros, float total, LocalDate fecha)
+	public boolean agregarVenta(Venta venta)
 			throws RuntimeException, NotNullException, DataEmptyException, NotNumbreException {
 		boolean x=false;
-		Combustible combustible_api = new Combustible(combustible);
+		/*Combustible combustible_api = new Combustible(combustible);
 		Venta venta= new Venta(combustible_api,cantidadLitros,total,fecha);
-		venta.calcularTotal();
+		venta.calcularTotal();*/
 		
 		String registroVentaEnDisco= ""+venta.fecha().toString()+"|"+venta.combustible().tipoCombustible()+"|"+venta.cantidadDeLitros()+"| $"+venta.total()+" ... Venta.\n";
 		enDiscoVentas.registrarVenta(registroVentaEnDisco);

@@ -10,7 +10,7 @@ import ar.edu.unrn.modeloexceptions.NotNumbreException;
 
 public interface PersistenciaApi {
 	
-	boolean agregarVenta(String combustible, String cantidadLitros, float total, LocalDate fecha) 
+	boolean agregarVenta(Venta venta) 
 			throws RuntimeException, NotNullException, DataEmptyException, NotNumbreException;
 
 	List<VentaDTO> obtenerVentas() throws RuntimeException, NotNullException, DataEmptyException, NotNumbreException;
